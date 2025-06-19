@@ -1,0 +1,10 @@
+[Unit]
+Description=Automatic USB data backup
+After=network.target
+
+[Service]
+ExecStart=/opt/usb-backup/auto-usb-backup.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
